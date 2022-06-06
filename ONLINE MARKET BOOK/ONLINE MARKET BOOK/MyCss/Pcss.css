@@ -1,0 +1,24 @@
+﻿.footerlinks{
+    color:#ffffff;
+    text-decoration: none !important;
+}
+    
+    .footerlinks:hover{
+        color: #4cff00;
+    }
+
+    #Main1{
+        background: #2b2b2b;
+    }
+
+
+
+#breadcrumbs-section {
+    background-color: #e9ecef;
+}
+.address p{
+    font-weight: 600;
+
+}
+
+

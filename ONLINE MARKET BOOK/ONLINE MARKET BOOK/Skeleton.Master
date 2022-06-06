@@ -1,0 +1,245 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Skeleton.master.cs" Inherits="ONLINE_MARKET_BOOK.Skeleton" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    
+   
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!--datatables css-->
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!-- jqery -->
+    <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JSS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Pcss -->
+    <link href="MyCss/Pcss.css" rel="stylesheet" />
+    <!--datatables js-->
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+
+    
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+
+    
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Collapsed content</h5>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+   
+  </nav>
+</div>
+
+
+    <form id="form1" runat="server">
+       
+
+           <div <%--id="Main1" class="footerlinks"--%>>
+
+           
+
+               <nav class="navbar navbar-expand-lg navbar-light">
+                  <a class="navbar-brand" >
+                      <img src="images/Logo.png" width="100" height="100" />
+                     <h7  >E-Library</h7>
+                  </a>
+                   
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                       aria-controls="navbarSupportedContent"
+                       aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                   <div class="navbar-collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="navbar-nav mr-auto">
+                           <li class="nav-item actice">
+                               <a class="nav-link" href="HomePage.aspx">Home</a>
+                               </li>                         
+                           <li class="nav-item actice">
+                               <a class="nav-link" href="ContactUs.aspx">Contact</a>
+                           </li>
+                           <li class="nav-item actice">
+                               <a class="nav-link" href="About us.aspx">About us</a>
+                           </li>
+
+                       </ul>
+
+                       <%--------------------------------------------------------------------%>
+
+                       <ul class="navbar-nav">
+                           <li class="nav-item actice">
+                               <asp:LinkButton class="nav-link" CausesValidation="false" ID="LinkButton4" runat="server"
+                                   OnClick="ViewB">View Books</asp:LinkButton>
+                               </li>
+                            <li class="nav-item actice">
+                               <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server"
+                                   OnClick="UserL">User Login</asp:LinkButton>
+                               </li>
+                           <li class="nav-item actice">
+                               <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server"
+                                   OnClick="SignU">Sign Up</asp:LinkButton>
+                           </li>
+                           <li class="nav-item actice">
+                               <asp:LinkButton class="nav-link" CausesValidation="false" ID="LinkButton3" runat="server" Visible="false"
+                                    OnClick="LogO">Logout</asp:LinkButton>
+                           </li>
+
+
+
+
+                           <%--  <li class="nav-item actice">
+                               <asp:LinkButton class="nav-link" ID="LinkButton5" runat="server" Visible="false"
+                                    OnClick="Profi">Profile</asp:LinkButton>
+                           </li>--%>
+
+                          <li class="nav-item dropdown active">
+                              <asp:LinkButton class="nav-link dropdown-toggle" href="#" id="navbarDropdown" runat="server" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               
+                              </asp:LinkButton>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <asp:LinkButton class="dropdown-item" CausesValidation="false" ID="LinkButton7" runat="server" Visible="false" OnClick="LinkButton7_Click"
+                                   >Profile Settings</asp:LinkButton>
+                                  <asp:LinkButton class="dropdown-item" CausesValidation="false" ID="AdminProfile7" runat="server" Visible="false" OnClick="AdminProfile7_Click">Admin Profile</asp:LinkButton>
+                                   <asp:LinkButton class="dropdown-item" CausesValidation="false" ID="Orders" runat="server" Visible="false" OnClick="Orders_Click"
+                                   >Your Orders</asp:LinkButton>
+                                  <asp:LinkButton class="dropdown-item" CausesValidation="false" ID="YourCart" runat="server" Visible="false" OnClick="YourCart_Click">Your Cart</asp:LinkButton>
+                             
+                             </div>
+                           </li>
+
+
+
+                           <li class="nav-item actice">
+                                                        
+                           </li>
+
+                        </ul>
+                    </div>
+
+               </nav>
+           
+          </div>
+
+
+        <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent2">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Collapsed content</h5>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+      </nav></div>
+        <br />
+
+        <!-- Main Content Placeholder -->
+         <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+
+<br />
+
+        <!-- Footer -->
+
+       <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent1">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Collapsed content</h5>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+
+
+        <footer>
+            <div id="" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            
+                            <asp:LinkButton class="btn btn-dark" CausesValidation="false" ID="LinkButtonAL" runat="server"
+                                OnClick="LinkButtonAL_Click">Admin Login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="btn btn-outline-dark" CausesValidation="false" ID="LinkButtonBI" runat="server"
+                                OnClick="LinkButtonBI_Click" Visible="false" >Book Inventory</asp:LinkButton>
+                            &nbsp;
+                           <asp:LinkButton class="btn btn-outline-dark" CausesValidation="false" ID="LinkButtonGM" runat="server"
+                               onclick="LinkButtonGM_Click" Visible="false">Genre Management</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="btn btn-outline-dark" CausesValidation="false" ID="LinkbuttonSM" runat="server"
+                                onclick="LinkbuttonSM_Click" Visible="false">Supplier Managment</asp:LinkButton>
+                             &nbsp;
+                            <asp:LinkButton class="btn btn-outline-dark" CausesValidation="false" ID="LinkButtonOM" runat="server"
+                                onclick="LinkButtonOM_Click" Visible="false">Order Managment</asp:LinkButton>
+
+                            <asp:LinkButton class="btn btn-outline-dark" CausesValidation="false" ID="LinkButtonOrderData" runat="server"
+                                onclick="LinkButtonOrderData_Click" Visible="false">Order Data</asp:LinkButton>
+
+                        </p>
+                    </div> 
+                </div>
+            </div>
+
+
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+</body>
+
+
+       <div class="text-center" >
+        <div class="text-white bg-dark">
+            <div class="">
+            <p >
+                &copy All right Reversed. <a  href="About%20us.aspx" target="_blank">
+                    Poran&Alex.</a>
+            </p>
+            </div>
+        </div>
+    </div>
+
+</html>

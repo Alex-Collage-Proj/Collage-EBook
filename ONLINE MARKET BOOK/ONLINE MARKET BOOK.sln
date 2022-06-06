@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ONLINE MARKET BOOK", "ONLINE MARKET BOOK\ONLINE MARKET BOOK.csproj", "{B5813C84-E738-4CEA-BA55-9FBFE4772360}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5813C84-E738-4CEA-BA55-9FBFE4772360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5813C84-E738-4CEA-BA55-9FBFE4772360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5813C84-E738-4CEA-BA55-9FBFE4772360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5813C84-E738-4CEA-BA55-9FBFE4772360}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0284F98-7D80-4A0C-A2B1-62A9F1D4A14C}
+	EndGlobalSection
+EndGlobal
